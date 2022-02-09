@@ -18,8 +18,8 @@ public class Connections {
 		config.setUsername(System.getProperty("username")); // e.g. "root", "postgres"
 		config.setPassword(System.getProperty("password")); // e.g. "my-password"
 		
-		  // For Java users, the Cloud SQL JDBC Socket Factory can provide authenticated connections.
-		  // See https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory for details.
+		  // For Java users, the Cloud SQL JDBC Socket Factory can provide authenticated connections
+		  // See https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory for details
 		
 		config.addDataSourceProperty("socketFactory",  System.getProperty("sockectfactory"));
 		config.addDataSourceProperty("cloudSqlInstance", System.getProperty("cloudsqlinstance"));
